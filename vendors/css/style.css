@@ -1,0 +1,863 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;900&display=swap";
+
+/* * {
+  box-sizing: border-box;
+} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 0px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  /* margin: 0; */
+  /* padding: 0; */
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* navbar section css here */
+/* navbar section css here */
+/* navbar section css here */
+
+/* 
+ */
+.navbar {
+  background: none;
+  padding: 0 16px;
+  position: absolute;
+  top: -21px;
+  left: 0;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+.brand_and_icon {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 78%; */
+  padding: 36px;
+  align-items: center;
+}
+.navbar_brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar_toggler {
+  background: transparent;
+  display: block;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 12px;
+  transition: all 0.4s ease;
+  border-radius: 4px;
+}
+
+.sticky_nav .navbar_toggler {
+  color: #000;
+}
+
+/* ul li a css here  */
+/* ul li a css here  */
+/* ul li a css here  */
+.navbar_collaspe {
+  overflow-y: scroll;
+  /* display: none; */
+}
+
+.navbar_nav > li > a {
+  text-transform: capitalize;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.4s ease;
+  border-radius: 4px;
+  padding: 12px 0 12px 0;
+  color: white;
+}
+.drop-icon {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar_nav > li > a:hover {
+  opacity: 1;
+}
+
+.sub_menu h4 {
+  text-transform: capitalize;
+  padding: 10px 7px;
+  color: #13112d;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sub_menu ul li {
+  text-transform: capitalize;
+  padding: 4px;
+  margin: 2px;
+}
+.sub_menu ul li a {
+  opacity: 1;
+  transition: all 0.4s ease;
+  color: #051441;
+}
+.sub_menu ul li a:hover {
+  color: #563bd1;
+}
+
+.sub_menu {
+  display: none;
+}
+
+.sub_menu_item {
+  padding-left: 12px;
+}
+
+/* navbar menu button here */
+/* navbar menu button here */
+
+.navmenu_btn .menu_btn {
+  border: 1px solid #fff;
+  padding: 14px 38px;
+  background: #fbfaff;
+  min-width: 120px;
+  text-align: center;
+  color: #fff;
+  border-radius: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 47px;
+  background-color: #5e2ced;
+}
+.navmenu_btn .menu_btn:hover {
+  background: #fff;
+  border-color: #5e2ced;
+  color: #5e2ced;
+}
+
+.navmenu_btn .menu_btn {
+  margin-left: 104px;
+}
+
+/* sticky navbar css here */
+/* sticky navbar css here */
+
+.sticky_nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background: #ffffff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 79px;
+  margin: 0 auto;
+  animation: slownav 1s forwards;
+}
+.sticky_nav ul li a {
+  color: #051441;
+  position: relative;
+}
+
+@keyframes slownav {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*********************************/
+/******* 2.Bennar Area  CSS area *****/
+/*********************************/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 140px;
+}
+
+.bennar {
+  max-width: 100%;
+  width: 100%;
+  background: #563bd1;
+  height: 110vh;
+  position: absolute;
+  top: -1%;
+  padding-top: 90px;
+}
+
+.bennar:before {
+  content: "";
+  background: url(../img/startup_banner_bg.png) no-repeat scroll center bottom;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 99;
+  top: 0;
+}
+
+.sinlge_bennar {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.new_startup_img {
+  /* margin-top: -173%; */
+  z-index: 99;
+}
+
+.bennar .new_startup_img .line.line_one {
+  left: -40px;
+  top: -95px;
+  z-index: -1;
+}
+.bennar .new_startup_img .line {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+}
+
+.bennar .new_startup_img .line.line_two {
+  left: 80px;
+  bottom: -138px;
+  opacity: 0.4;
+}
+
+.bennar .new_startup_img .line.line_three {
+  right: 93px;
+  top: -160px;
+  opacity: 0.4;
+}
+
+/* bennar right section area */
+/* bennar right section area */
+.new_startup_content {
+  position: absolute;
+  z-index: 99;
+}
+.new_startup_content .bennar_title {
+  font: 300 50px "Poppins", sans-serif;
+  line-height: 58px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.new_startup_content .bennar_title span {
+  font-weight: bold;
+}
+.new_startup_content .bennar_paragraph {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 87%;
+}
+.new_startup_content .action_btn .app_btn {
+  background: #fff;
+  color: #563bd1;
+  box-shadow: 0px 20px 20px 0px rgba(0, 11, 40, 0.1);
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 45px;
+  border: 1px solid #4069eb;
+  overflow: hidden;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.new_startup_content .app_btn i {
+  padding-left: 8px;
+}
+
+.action_btn {
+  padding-top: 40px;
+}
+
+/*********************************/
+/******* 2.Bennar Area  CSS area *****/
+/*********************************/
+
+/*********************************/
+/******* <!--Start Ways your team can area  here -->
+/*********************************/
+
+.ways_team_content_section_herereere {
+  margin-top: 900px;
+}
+
+.top_ways_team h2 {
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 0 0 18%;
+  margin: 1%;
+}
+.card {
+  background-color: #fbfbfd;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  border: 2px solid #fa6fd1;
+  background-color: #fff;
+}
+.card-content {
+  padding: 56px;
+}
+#ways_team .nav-link {
+  border: 0;
+  background: #fbfbfd;
+  padding: 32px 0;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+#ways_team .nav-link.active {
+  border-color: #fa6fd1;
+}
+
+#icon_media_content p#icon_cloude {
+  color: white;
+  background: #fa6fd1;
+  text-align: center;
+  /* padding: 15px; */
+  border-radius: 56px;
+  width: 67px;
+  height: 67px;
+  text-align: center;
+  line-height: 66px;
+  margin: 0 auto;
+}
+#icon_media_content #card_subtitle {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #051441;
+  font-weight: 400;
+  white-space: pre-line;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* ways to image section */
+/* ways to image section */
+/* ways to image section */
+
+.ways_to_image_section {
+  padding-bottom: 140px;
+  padding-top: 50px;
+}
+
+.startup_tab_img {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  z-index: 1;
+}
+.startup_tab_img:before {
+  content: "";
+  height: 100%;
+  background: url(../img/tab_shape_bg.png) no-repeat scroll center 0 / contain;
+  top: 0;
+  right: -55px;
+  left: -55px;
+  position: absolute;
+  z-index: -1;
+}
+.startup_tab_img .phone_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.startup_tab_img .web_img img {
+  max-width: 100%;
+}
+
+/*********************************/
+/******* 8.Start Experience area *****/
+/*********************************/
+.all_experience_section {
+  background: #fbfbfd;
+  padding: 120px 0;
+}
+
+.top_head_experience h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.row_experience {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.stratup_service_img {
+  position: relative;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.stratup_service_img .shape {
+  position: absolute;
+  left: -37px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/new_shape.png) no-repeat scroll left 0;
+  z-index: -1;
+  background-size: contain;
+}
+
+.stratup_service_img .phone_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.stratup_service_info {
+  position: relative;
+  padding-left: 75px;
+}
+
+.stratup_service_info .startup_service_item .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  background: #6fadfa;
+  line-height: 65px;
+  position: absolute;
+  left: 0;
+  /* top: -5px; */
+}
+
+.stratup_service_info .startup_service_item + .startup_service_item {
+  margin-top: 40px;
+}
+
+.stratup_service_info .startup_service_item .icon.icon_two {
+  background: #f3af4e !important;
+}
+
+.stratup_service_info .startup_service_item .icon.icon_three {
+  background: #fa6fd1 !important;
+}
+.stratup_service_info .startup_service_item .icon.icon_four {
+  background: #fa6666 !important;
+}
+
+.startup_service_item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #051441;
+  margin-bottom: 2px;
+}
+.startup_service_item p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #677294;
+}
+
+/*********************************/
+/******* 8.Start Experience area *****/
+/*********************************/
+
+/*********************************/
+/******* 9.Start  ProgressBar area *****/
+/*********************************/
+
+.all_ProgressBar_Area {
+  padding-top: 90px;
+}
+
+.progress_bar_top h1 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.skill-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-skill {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.circlechartImage {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.number {
+  position: absolute;
+  top: 48%;
+  left: 41%;
+  transform: translate(-12%, -50%);
+  font-size: 40px;
+  color: #051441;
+  font-weight: 400;
+}
+
+.single-skill h3 {
+  color: #051441;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: poppins, sans-serif;
+}
+
+.single-skill p {
+  width: 81%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 13px;
+  font-size: 16px;
+  color: #677294;
+  line-height: 28px;
+}
+
+.br_bottom {
+  width: 100%;
+  height: 1px;
+  background: #f0f0f8;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/*********************************/
+/******* 9.Start  Cleint area *****/
+/*********************************/
+
+.all_client_feedback {
+  position: relative;
+  padding: 200px 0;
+}
+
+.client_all_content_section_here {
+  display: flex;
+}
+.singel_client_content {
+  flex: 0 0 50%;
+}
+
+.testimonial_shap_img {
+  background: url(../img/testimonial_bg_shap.png) no-repeat bottom left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial_title h6 {
+  font-size: 16px;
+  color: #563bd1;
+  font-style: italic;
+}
+
+.testimonial_title .f_p {
+  color: #051441;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.testimonial_title {
+  position: relative;
+  padding-bottom: 90px;
+}
+.testimonial_title .owl-prev {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0e4ed;
+  text-align: center;
+  font-size: 14px;
+  color: #677294;
+  border-radius: 50%;
+  line-height: 48px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background: transparent;
+}
+
+.testimonial_title .owl-next {
+  left: 62px;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0e4ed;
+  text-align: center;
+  font-size: 14px;
+  color: #677294;
+  border-radius: 50%;
+  line-height: 48px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background: transparent;
+}
+.testimonial_title .owl-prev:hover {
+  background-color: #563bd1;
+  color: white;
+}
+
+.testimonial_title .owl-next:hover {
+  background-color: #563bd1;
+  color: white;
+}
+
+/* client feedback right hre
+client feedback right hre
+client feedback right hre */
+
+.start_up_testimonial_title {
+  position: relative;
+  height: 575px;
+}
+
+.start_up_testimonial_title::before {
+  position: absolute;
+  content: "";
+  background: url("../img/testimonial_bg.png") no-repeat scroll center 0 /
+    contain;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.testiimonial_content_here .item .author_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.testiimonial_content_here .item p {
+  font-size: 18px;
+  line-height: 36px;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.testiimonial_content_here .item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.testiimonial_content_here .item h6 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.testiimonial_content_here {
+  position: relative;
+}
+.item {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 64%;
+  left: 112px;
+}
+.author_img img {
+  text-align: center;
+}
+
+/*********************************/
+/******* 10.Start  Footer area *****/
+/*********************************/
+.payment_footer_area {
+  background: #07112d;
+  border: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.row_footer {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.first_single_footer {
+  flex: 0 0 28% !important;
+  margin-left: -32px;
+}
+.single_footer_area {
+  flex: 0 0 24%;
+}
+
+.payment_footer_area .f_widget.company_widget p {
+  color: #7f88a6;
+  margin-top: 40px;
+}
+.payment_footer_area .f_widget.company_widget a {
+  color: #5f51fb;
+}
+
+.f-title {
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.f_widget.about-widget .f_list {
+  margin-bottom: 0px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.f_widget.about-widget .f_list li {
+  margin-bottom: 15px;
+}
+.payment_footer_area .f_widget.about-widget .f_list li a {
+  color: #959eb8;
+}
+
+.f_widget.about-widget .f_list li a {
+  font: 300 16px/20px "Poppins", sans-serif;
+  color: #677294;
+  position: relative;
+  transition: color 0.2s linear;
+  display: inline-block;
+}
+.footer_top_six .f_widget.about-widget .f_list li a::before {
+  background: #fff;
+}
+
+.f_widget.about-widget .f_list li a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #6754e2;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  position: absolute;
+  transition: width 0.2s linear;
+}
+
+.f_widget.about-widget .f_list li a:hover:before {
+  width: 100%;
+}
+.f_widget.about-widget .f_list li a:before {
+  background: #5f51fb;
+}
+.f_widget.about-widget .f_list li a:hover {
+  color: #5f51fb;
+}
+
+.footer_top_six .f_widget.about-widget .f_list li a:hover {
+  color: #fff;
+}
+
+.f_widget.about-widget .f_list li a:hover::before {
+  left: 1%;
+}
+
+.footer_top_six .social-widget .f_social_icon a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #182240;
+  transition: all 0.3s linear;
+}
+
+.f_social_icon a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 42px;
+  color: #858da8;
+  display: inline-block;
+  background: #182240;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+.f_social_icon a:hover {
+  background-color: rgb(95, 81, 251);
+  color: #fff;
+}
+
+/*********************************/
+/******* 10.End  Footer area *****/
+/*********************************/
